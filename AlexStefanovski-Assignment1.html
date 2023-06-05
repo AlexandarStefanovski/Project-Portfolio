@@ -1,0 +1,362 @@
+
+<!-- COMP 3340 Assignment 1 -->
+<!-- Name: Alexandar Stefanovski -->
+<!-- Student ID: 110077148 -->
+<!-- 2023-06-03 -->
+
+<!DOCTYPE html>
+
+<html>
+
+
+    <head>
+        <meta charset="utf-8">
+        <title>My Project Portfolio</title>
+        <link rel="stylesheet" type="text/css" href="main.css">
+    </head>
+
+
+    <body>
+
+
+        <header>
+            <!-- Headings -->
+
+            <h1>My Project Portfolio</h1>
+            <h2>Alexandar Stefanovski</h2>
+            <h3>Here you will find all of my previous Computer Science Projects</h3>
+
+        </header>
+
+
+        <nav>
+            <!-- Navigation Links -->
+            <div id="navigation">
+                <h1>Navigation Menu:</h1>
+                <ul>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+
+        <section id="about">
+            <!-- About Me -->
+
+            <h1>About Me</h1>
+
+            <p>My name is Alexandar Stefanovski and I'm a second-year Computer Science student at the Univerity of Windsor. 
+                I am working towards finishing my degree in General Computer Science. On my project portfolio, you will find 
+                all of the projects I've completed on the journey to finishing my degree. I have completed all types of 
+                projects, ranging from simple beginner programming, to more complex computer science concepts, such as data 
+                structures and algorithms, and assembly language programming. 
+            </p>
+
+            <h3>Here are some of my Computer Science Skills and Relevant Courses:</h3>
+
+            <ol>
+                <li><strong>Intro to Programming</strong>
+                    <ul>
+                        <li>Python Programming</li>
+                        <li>Basic Algorithms</li>
+                        <li>File I/O</li>
+                    </ul>
+                </li>
+
+                <li><strong>Data Structures and Algorithms</strong>
+                    <ul>
+                        <li>Big-O-Notation</li>
+                        <li>Sorting Algorithms</li>
+                        <li>Binary Trees</li>
+                    </ul>
+                </li>
+
+                <li><strong>System Programming</strong>
+                    <ul>
+                        <li>Linux/Unix</li>
+                        <li>Shell Scripting</li>
+                        <li>Process Management</li>
+                    </ul>
+                </li>
+
+                <li><strong>Microprocessor Programming</strong>
+                    <ul>
+                        <li>Assembly Language</li>
+                        <li>Computer Architecture</li>
+                        <li>Binary and Hexadecimal Number Systems</li>
+                    </ul>
+                </li>
+
+                <li><strong>Object-Oriented Programming</strong>
+                    <ul>
+                        <li>Java Programming</li>
+                        <li>Object-Oriented Programming Concepts</li>
+                        <li>Class/Method Design and Implementation</li>
+                    </ul>
+                </li>
+
+            </ol>
+
+            <p>Visit "Projects" from the Navigation Links to see my projects from these relevant courses.
+            </p>
+
+        </section>
+
+
+        <section id="projects">
+            <!-- Projects -->
+
+            <h1>Projects</h1>
+
+            <div class="project">
+                <h3>1. Wind Chill Index Calculator</h3>
+                <img src="project1-image.PNG" alt="Project 1 image">
+
+                <p><strong>Course:</strong> Intro to Programming</p>
+                <p><strong>Programming Language:</strong> Python</p>
+                <p><strong>Description:</strong> This project involved creating a simple Python program which takes
+                2 inputs from the user (air temperature and wind speed), and displays the wind chill index 
+                rounded to the closest integer. Here is the code for this project:</p>
+
+                <pre><code>
+                    #INPUT
+                    t = int(input("Enter the air temperature in degrees Celsius:\n"))
+                    v = int(input("Enter the wind speed in Km per hour:\n"))
+                        
+                        
+                    #PROCESSING
+                    wci = 13.12 + (0.6215 * t) - (11.37 * (v ** 0.16)) + (0.3965 * t * (v ** 0.16))
+                        
+                        
+                    #OUTPUT
+                    print("The windchill for temperature:", t, "degrees Celsius, and wind speed:", v, "Km per hour, is:", (format(wci, '.2f')), "degrees Celsius.")
+                </code></pre>
+            </div>
+
+            <div class="project">
+                <h3>2. Triangle Calculator</h3>
+                <img src="project2-image.png" alt="Project 2 image">
+
+                <p><strong>Course:</strong> Intro to Programming</p>
+                <p><strong>Programming Language:</strong> Python</p>
+                <p><strong>Description:</strong> This project involved creating a simple Python program which takes
+                3 inputs from the user (3 side lengths of their triangle), and displays what type of triangle it is 
+                (equilateral, isosceles, or scalene). Here is the code for this project:</p>
+
+                <pre><code>
+                    #INPUT 
+                    side1 = int(input("Enter the length of side 1: "))
+                    side2 = int(input("Enter the length of side 2: "))
+                    side3 = int(input("Enter the length of side 3: "))
+
+
+                    #PROCESSING 
+
+                    # check for errors in input
+                    if side1 &lt; 0 or side1 &gt; 100 or side2 &lt; 0 or side2 &gt; 100 or side3 &lt; 0 or side3 &gt; 100:
+                        print("Invalid side length(s). Side length must be between 0 and 100.")
+
+                    # if no errors
+                    else:
+                        # check the type of triangle based on the length of sides
+
+                        #OUTPUT
+
+                        if side1 == side2 == side3:
+                            print("Equilateral triangle")
+
+                        elif side1 == side2 or side1 == side3 or side2 == side3:
+                            print("Isosceles triangle")
+                            
+                        else:
+                            print("Scalene triangle")
+                </code></pre>
+            </div>
+
+            <div class="project">
+                <h3>3. Stack Data Structure</h3>
+                <img src="project3-image.jpg" alt="Project 3 image">
+
+                    <p><strong>Course:</strong> Data Structures and Algorithms</p>
+                    <p><strong>Programming Language:</strong> Java</p>
+                    <p><strong>Description:</strong> This project involved creating a Stack data structure 
+                        with the following operations: push, pop, top, size, isEmpty, and isFull. This a linear data structure 
+                        that follows a principle known as LIFO (Last In First Out). Here is the code for this project:</p>
+                
+                <pre><code>
+                    class Stack {
+    
+                        private int[] array;
+                        private int top;
+                        private int capacity;
+                    
+                        Stack(int size) {
+                            array = new int[size];
+                            top = -1;
+                            capacity = size;
+                        }
+                    
+                        public void push(int item) {
+                            if (isFull()) {
+                                System.out.println("Stack is full");
+                                return;
+                            }
+                            array[++top] = item;
+                        }
+                    
+                        public int pop() {
+                            if (isEmpty()) {
+                                System.out.println("Stack is empty");
+                            }
+                            return array[top--];
+                        }
+                    
+                        public int top() {
+                            if (isEmpty()) {
+                                System.out.println("Stack is empty");
+                            }
+                            return array[top];
+                        }
+                    
+                        public int size() {
+                            return top + 1;
+                        }
+                    
+                        public boolean isEmpty() {
+                            return top == -1;
+                        }
+                    
+                        public boolean isFull() {
+                            return top == capacity - 1;
+                        }
+                    }
+                </code></pre>
+            </div>
+
+            <div class="project">
+                <h3>4. Quick Sort Algorithm</h3>
+                <img src="project4-image.png" alt="Project 4 image">
+
+                    <p><strong>Course:</strong> Data Structures and Algorithms</p>
+                    <p><strong>Programming Language:</strong> Java</p>
+                    <p><strong>Description:</strong> This project involved creating a sorting algorithm called Quicksort. My algorithm 
+                        creates a partition around the last element of the array, and continues this process until there is only 1 
+                        element left in the array. Then, all of the sub-arrays are recursively sorted. The average running time for
+                        this algorithm is O(n log n). Here is the code for this project:</p>
+                
+                <pre><code>
+                    public class quickSort{
+
+                        public static void quickS(int[] arr, int start, int end) {
+                    
+                            if (start &lt; end) {
+                    
+                                int pivot = arr[end];
+                                int partitionIndex = start;
+                    
+                                for (int i = start; i &lt; end; i++) {
+                    
+                                    if (arr[i] &lt;= pivot) {
+                    
+                                        int temp = arr[i];
+                                        arr[i] = arr[partitionIndex];
+                                        arr[partitionIndex] = temp;
+                                        partitionIndex++;
+                    
+                                    }
+                                }
+                    
+                                int temp = arr[end];
+                                arr[end] = arr[partitionIndex];
+                                arr[partitionIndex] = temp;
+                                
+                                quickS(arr, start, partitionIndex - 1);
+                                quickS(arr, partitionIndex + 1, end);
+                    
+                            }
+                        }
+                </code></pre>
+            </div>
+
+            <div class="project">
+                <h3>5. Fibonacci Number Sequence Assembly Program</h3>
+                <img src="project5-image.png" alt="Project 5 image">
+
+                    <p><strong>Course:</strong> Microprocessor Programming</p>
+                    <p><strong>Programming Language:</strong> Assembly Language</p>
+                    <p><strong>Description:</strong> This project involved creating a program in Assembly Language 
+                        that calculates the first seven values of the Fibonacci number sequence. My program uses a 
+                        loop, and the loop continues until the counter value in the ECX register reaches 0. Then, the
+                        DumpRegs function is called to display the contents of the registers. Here is the code for 
+                        this project:</p>
+                
+                <pre><code>
+                    TITLE
+
+                    ; Alexandar Stefanovski :
+                    ; 2023-02-01 :
+                    ; 110077148 : 
+                    ; This program uses a loop to calculate the first seven values of the Fibonacci number sequence : 
+
+                    INCLUDE Irvine32.inc
+                    INCLUDELIB Irvine32.lib
+
+                    .data
+
+                        ; data declarations go here
+
+                    .code
+                    main PROC
+
+                        ; program syntax here
+
+                        mov eax , 1 ; load the first number of the sequence into the eax register
+
+                        call DumpRegs ; call the DumpRegs function to display the current contents of the registers
+
+                        mov ebx, 0 ; initialize the ebx register to 0
+                        mov edx, 1 ; load the second number of the sequence into the edx register
+                        mov ecx, 6 ; set the counter in the ecx register to 6
+
+                        L1:
+
+                        mov eax, ebx ; copy the contents of ebx into eax
+                        add eax, edx ; ddd the contents of edx to eax and store the result in eax
+
+                        call DumpRegs ; call the DumpRegs function to display the current contents of the registers
+
+                        mov ebx, edx ; copy the contents of edx into ebx
+                        mov edx, eax ; copy the contents of eax into edx
+
+                        loop L1 ; repeat the loop until the counter in ecx reaches 0
+
+                        exit
+
+                    main ENDP
+                    END main
+
+                </code></pre>
+            </div>
+
+        </section>
+
+
+        <footer>
+            <!-- Footer Content -->
+
+            <div id="contact">
+                <h2>Contact Me</h2>
+                <p>Email me at <a href="mailto:stefano2@uwindsor.ca">stefano2@uwindsor.ca</a></p>
+                <p>Contact me on Discord: stef#9368</p>
+                <img src="email-image.jpg" alt="Email" width="150" height="150">
+                <img src="discord-image.png" alt="Discord" width="150" height="150">
+            </div>
+
+        </footer>
+
+
+    </body>
+
+</html>

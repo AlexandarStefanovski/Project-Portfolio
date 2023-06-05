@@ -1,0 +1,105 @@
+
+/* navigation menu of my webpage */
+#navigation { 
+    margin: 10px;
+    padding: 10px;
+    background-color: #f2f2f2;
+}
+
+#navigation li {
+    display: inline;
+    margin-right: 10px;
+}
+
+#navigation li a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/* body of my webpage */
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4fb;
+}
+
+
+/* header of my webpage */
+header {
+    background-color: #333333ee;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+
+/* about me section of my webpage */
+#about {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fca156;
+}
+
+
+/* projects section of my webpage */
+#projects {
+    margin: 20px;
+    padding: 20px;
+    background-color: #9fe430a6;
+}
+
+
+/* individual project of my webpage */
+.project {
+    margin: 20px;
+    padding: 20px;
+    background-color: #ffe46e;
+    border-radius: 5px;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+/* contact me section of my webpage */
+#contact {
+    margin: 20px;
+    padding: 20px;
+    background-color: #5fdcfc;
+}
+
+
+/* responsiveness of my webpage */
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 18px;
+    }
+    h1, h2, h3 {
+        font-size: 24px;
+    }
+
+    nav {
+        padding: 10px;
+    }
+
+    nav ul li {
+        display: block;
+        text-align: center;
+    }
+
+    section {
+        padding: 10px;
+    }
+
+    .project {
+        padding: 10px;
+    }
+
+    #contact {
+        width: 100%;
+    }
+
+    footer {
+        padding: 10px;
+    }
+}
